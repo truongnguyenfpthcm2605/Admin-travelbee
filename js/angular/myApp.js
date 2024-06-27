@@ -77,7 +77,7 @@ app.config(function ($routeProvider) {
       
     })
     .when('/ticket', {
-      templateUrl: './pages/QLVe.html'
+      templateUrl: './pages/QLve.html'
     })
 
     .otherwise({
