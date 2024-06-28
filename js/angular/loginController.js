@@ -30,9 +30,9 @@ app.controller("loginController", function ($scope, $location, $http, $rootScope
                             $location.path('/main');
                         } else {
                             Swal.fire({
-                                title: 'Đăng Nhập Thành Công',
+                                title: 'Không thể đăng nhập',
                                 width: 600,
-                                icon: 'success',
+                                icon: 'warning',
                                 padding: '3em',
                                 color: '#716add'
                                 
