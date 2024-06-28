@@ -3,7 +3,7 @@ angular.module('app').controller('UpdateLoation', ['$scope', '$http', '$location
     $scope.formData = {};
     var id = $location.search().id;
     $scope.loadLocationData = function() {
-      var apiUrl = 'http://14.225.255.228/api/v1/location/update/'+id; // URL của API để lấy dữ liệu
+      var apiUrl = 'http://localhost:8080/api/v1/location/update/'+id; // URL của API để lấy dữ liệu
       $http({
         method: 'GET',
         url: apiUrl,
@@ -28,7 +28,7 @@ angular.module('app').controller('UpdateLoation', ['$scope', '$http', '$location
     };
     $scope.loadLocationData();
     $scope.updateLocation = function() {
-        var apiUrl = 'http://14.225.255.228/api/v1/location/update/' + $scope.formData.id;
+        var apiUrl = 'http://localhost:8080/api/v1/location/update/' + $scope.formData.id;
         $http({
           method: 'PUT',
           url: apiUrl,
